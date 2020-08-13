@@ -116,18 +116,20 @@
 
 <script>
     window.onload = function() {
-	SwaggerLayout(
-	    "{{ specs_url }}",
-	    document.getElementById("swagger-ui")
-        );
-        
-         var apiUmbrella = document.createElement('script'); 
-         apiUmbrella.type = 'text/javascript'; 
-         apiUmbrella.async = true;
-         apiUmbrella.src = 'https://api.data.gov/static/javascripts/signup_embed.js';
-         (document.getElementsByTagName('head')[0])
-         .appendChild(apiUmbrella);
-      };
+      SwaggerLayout(
+        "{{ specs_url }}",
+        document.getElementById("swagger-ui")
+      );
+      function addSignUpForm() {
+        var apiUmbrella = document.createElement('script');
+        apiUmbrella.type = 'text/javascript';
+        apiUmbrella.async = true;
+        apiUmbrella.src = 'https://api.data.gov/static/javascripts/signup_embed.js';
+        (document.getElementsByTagName('head')[0])
+        .appendChild(apiUmbrella);
+      }
+      window.setTimeout(addSignUpForm, 1000);
+    };
 </script>
 
 
