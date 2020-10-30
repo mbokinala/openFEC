@@ -1,5 +1,4 @@
-#apispec==0.39.0
-apispec==1000
+apispec==0.39.0
 prance[osv]>=0.19
 cfenv==0.5.2
 invoke==0.15.0
