@@ -16,7 +16,7 @@ interesting candidates and committees. Then, you can use their IDs to find repor
 item details with the other endpoints. If you are interested in individual donors, check
 out contributor information in the `/schedule_a/` endpoints.
 
-<b class="body" id="getting_started_head">Getting started with the openFEC API</b><br>
+<b class="body" id="getting_started_head">Getting started with the openFEC API TEST</b><br>
 
 If you would like to use the FEC's API programmatically, you can sign up for your own API \
 key using our form. Alternatively, you can still try out our API without an API key by using \
