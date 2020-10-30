@@ -246,6 +246,9 @@ def deploy(ctx, space=None, branch=None, login=None, yes=False, migrate_database
 
             return sys.exit(1)
 
+        print("A new version of your application '{}' has been successfully pushed!".format(app))
+        ctx.run('cf apps', echo=True, warn=True)
+
     # Needed for CircleCI
     return sys.exit(0)
 
